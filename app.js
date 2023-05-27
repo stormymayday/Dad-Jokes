@@ -4,4 +4,5 @@ const url = 'https://icanhazdadjoke.com/';
 
 // Element Selections
 const btn = getElement('.btn');
-console.log(btn);
+const result = getElement('.result');
+console.log(result);
