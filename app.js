@@ -5,4 +5,8 @@ const url = 'https://icanhazdadjoke.com/';
 // Element Selections
 const btn = getElement('.btn');
 const result = getElement('.result');
-console.log(result);
+
+// Listening for 'click' events
+btn.addEventListener('click', () => {
+    console.log(result);
+});
