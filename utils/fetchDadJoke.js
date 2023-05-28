@@ -1,5 +1,7 @@
 import getElement from "./getElement.js";
+
 const url = 'https://icanhazdadjoke.com/';
+const result = getElement('.result');
 
 const fetchDadJoke = async () => {
 
