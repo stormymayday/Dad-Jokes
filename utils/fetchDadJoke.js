@@ -1,3 +1,5 @@
+const url = 'https://icanhazdadjoke.com/';
+
 const fetchDadJoke = async () => {
 
     const response = await (fetch(url, {
