@@ -9,7 +9,7 @@ const fetchDadJoke = async () => {
         },
     }));
 
-    console.log(response);
+    const data = await response.json();
 
 };
 
