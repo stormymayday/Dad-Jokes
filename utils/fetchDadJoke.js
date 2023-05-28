@@ -14,7 +14,8 @@ const fetchDadJoke = async () => {
 
     const data = await response.json();
 
-    console.log(data);
+    // Rendering 'Dad Joke' in the DOM
+    result.textContent = data.joke;
 
 };
 
