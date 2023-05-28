@@ -3,6 +3,8 @@ import fetchDadJoke from './utils/fetchDadJoke.js';
 
 const btn = getElement('.btn');
 
+fetchDadJoke();
+
 btn.addEventListener('click', () => {
     fetchDadJoke();
 });
