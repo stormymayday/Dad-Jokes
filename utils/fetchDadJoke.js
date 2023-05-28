@@ -1,3 +1,4 @@
+import getElement from "./getElement.js";
 const url = 'https://icanhazdadjoke.com/';
 
 const fetchDadJoke = async () => {
@@ -10,6 +11,8 @@ const fetchDadJoke = async () => {
     }));
 
     const data = await response.json();
+
+    console.log(data);
 
 };
 
