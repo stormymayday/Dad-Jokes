@@ -1,4 +1,5 @@
 import getElement from './utils/getElement.js';
+import fetchDadJoke from './utils/fetchDadJoke.js';
 
 // Element Selections
 const btn = getElement('.btn');
