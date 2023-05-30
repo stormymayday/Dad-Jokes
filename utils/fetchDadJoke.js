@@ -5,6 +5,8 @@ const result = getElement('.result');
 
 const fetchDadJoke = async () => {
 
+    result.textContent = 'Loading...';
+
     const response = await (fetch(url, {
         headers: {
             Accept: 'application/json',
