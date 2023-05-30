@@ -7,17 +7,27 @@ const fetchDadJoke = async () => {
 
     result.textContent = 'Loading...';
 
-    const response = await (fetch(url, {
-        headers: {
-            Accept: 'application/json',
-            'User-Agent': 'learning app'
-        },
-    }));
+    try {
 
-    const data = await response.json();
+        const response = await (fetch(url, {
+            headers: {
+                Accept: 'application/json',
+                'User-Agent': 'learning app'
+            },
+        }));
 
-    // Rendering 'Dad Joke' in the DOM
-    result.textContent = data.joke;
+        const data = await response.json();
+
+        // Rendering 'Dad Joke' in the DOM
+        result.textContent = data.joke;
+
+    } catch (error) {
+
+        result.textContent = 'Sorry, there was an error loading a joke';
+
+    }
+
+
 
 };
 
