@@ -16,6 +16,11 @@ const fetchDadJoke = async () => {
             },
         }));
 
+        if (!response.ok) {
+
+            throw new Error(`Error`);
+        }
+
         const data = await response.json();
 
         // Rendering 'Dad Joke' in the DOM
@@ -23,7 +28,7 @@ const fetchDadJoke = async () => {
 
     } catch (error) {
 
-        result.textContent = 'Sorry, there was an error loading a joke';
+        result.textContent = `Whoops, something went wrong.`;
 
     }
 
